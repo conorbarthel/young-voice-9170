@@ -1,0 +1,6 @@
+<h1>Professor <%= @professor.name %> </h1>
+
+<h2>Students</h2>
+<% @professor.students.each do |student| %>
+  <%= student.name %>
+<% end %>

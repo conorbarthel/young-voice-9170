@@ -3,5 +3,7 @@ class ProfessorsController < ApplicationController
     @professors = Professor.all
   end
 
-
-end 
+  def show
+    @professor = Professor.find(params[:id])
+  end
+end

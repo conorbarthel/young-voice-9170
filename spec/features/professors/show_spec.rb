@@ -14,11 +14,11 @@ RSpec.describe "professors show page" do
     @student_2 = @professor_1.students.create!(name: "Ron Weasley",
                                               age:14,
                                               house: "Griffendor")
-    @student_3 = @professor_1.students.create!(name: "Fred Weasley",
+    @student_3 = @professor_2.students.create!(name: "Fred Weasley",
                                               age:16,
                                               house: "Griffendor")
 
-    ProfessorStudent.create!(professor_id: @professor_2.id, student_id: @student_3.id)
+    ProfessorStudent.create!(professor_id: @professor_2.id, student_id: @student_2.id)
   end
 
   it "lists names of all students that that professor has" do
