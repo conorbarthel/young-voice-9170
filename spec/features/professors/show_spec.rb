@@ -32,7 +32,7 @@ RSpec.describe "professors show page" do
 
   it "displays average age of all that professors students" do
     visit "/professors/#{@professor_2.id}"
-
+    
     expect(page).to have_content("Average Age: 15")
   end
 end
