@@ -1,5 +1,9 @@
 # Hogwarts Again
 
+# Reflection
+I'm sure that my testing and implementation of the user stories could be improved, but I felt good about this IC. I have a good grasp on MVC workflow and RESTful 
+routes. I plan to continue to improve on my active record/sql fluency and utilizing model, controller, view optimally. 
+
 ## Setup instructions:
   - Fork this repo
   - `git clone <repo>`
