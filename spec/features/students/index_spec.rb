@@ -23,7 +23,7 @@ RSpec.describe "professors show page" do
 
   it "has a list of all student names and a count of professors each student has" do
     visit "/students"
-
+    
     expect(page).to have_content("Ron Weasley: 2")
     expect(page).to have_content("Draco Malfoy: 1")
     expect(page).to have_content("Fred Weasley: 1")
