@@ -21,12 +21,14 @@ RSpec.describe "professors show page" do
     ProfessorStudent.create!(professor_id: @professor_2.id, student_id: @student_2.id)
   end
 
-  it "has a list of all student names and a count of professors each student has" do
+  it "has a list of all student names alphabetically and a count of professors each student has" do
     visit "/students"
-    
+
     expect(page).to have_content("Ron Weasley: 2")
     expect(page).to have_content("Draco Malfoy: 1")
     expect(page).to have_content("Fred Weasley: 1")
+    expect("Draco Malfoy: 1").to appear_before("Fred Weasley: 1")
+    expect("Fred Weasley: 1").to appear_before("Ron Weasley: 2")
   end
 
 end
